@@ -3,12 +3,12 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "ofxstatement-sample"
+name = "ofxstatement-SwedenSeb"
 version = "0.0.1"
 authors = [
-  { name="Andrey Lebedev", email="andrey@lebedev.lt" },
+  { name="Maxcco", email="maxcco@free.fr" },
 ]
-description = "Sample plugin for ofxstatement"
+description = "Seb sweden plugin for ofxstatement"
 readme = "README.rst"
 requires-python = ">=3.9"
 classifiers = [
@@ -24,10 +24,11 @@ classifiers = [
 keywords = ["ofx", "banking", "statement", "plugin", "ofxstatement"]
 dependencies = [
   "ofxstatement",
+  "openpyxl",
 ]
 
 [project.urls]
-Homepage = "https://github.com/kedder/ofxstatement-sample/"
+Homepage = "https://github.com/maxcco/ofxstatement-se-seb-new"
 
 [project.entry-points."ofxstatement"]
-sample = "ofxstatement_sample.plugin:SamplePlugin"
+SwedenSeb = "ofxstatement_SwedenSeb.plugin:SwedenSebPlugin"
